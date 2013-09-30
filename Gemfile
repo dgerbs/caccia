@@ -40,7 +40,7 @@ group :development, :test do
 	gem 'launchy'
 	gem 'shoulda'
 	gem 'valid_attribute'
-	gem 'factory_girl_rails'
+	gem 'factory_girl'
 	gem 'pry-rails'
 end
 
