@@ -27,6 +27,8 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'devise'
+
 gem 'simple_form'
 
 group :doc do
@@ -40,7 +42,7 @@ group :development, :test do
 	gem 'launchy'
 	gem 'shoulda'
 	gem 'valid_attribute'
-	gem 'factory_girl_rails'
+	gem 'factory_girl'
 	gem 'pry-rails'
 end
 

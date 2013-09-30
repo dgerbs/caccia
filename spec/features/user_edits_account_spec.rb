@@ -12,7 +12,7 @@ feature 'User edits account', %Q{
 # • I must specify a valid location
 # • I have the option to delete my account
 	
-	scenario 'User edits account' do
+	pending 'User edits account' do
 
 	end
 end
