@@ -22,7 +22,7 @@ feature 'user registers or signs in', %Q{
 
 			click_button 'Sign up'
 
-			expect(page).to have_content('You have successfully registered')
+			expect(page).to have_content('You have signed up successfully')
 
 			expect(User.count).to eql(1)
 			expect(User.first.email).to eql('foo@example.com')
