@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-feature 'user registers or signs in', %Q{
+feature 'user registers an account', %Q{
 	As a user
 	I want to register and sign in
 	So that I can access the application.
