@@ -16,6 +16,7 @@ feature 'Musician signs up', %Q{
     scenario 'register for an account' do
       visit new_user_registration_path
 
+      fill_in 'Name', with: 'John Smith'
       fill_in 'Email', with: 'foo@example.com'
       fill_in 'Password', with: '12345678'
       fill_in 'Password confirmation', with: '12345678'
