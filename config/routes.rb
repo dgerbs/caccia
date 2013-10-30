@@ -1,4 +1,6 @@
 Caccia::Application.routes.draw do
+  resources :engagements
+
   resources :events
 
   resources :musicians

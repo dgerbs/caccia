@@ -1,21 +1,21 @@
-class MusiciansController < ApplicationController
+class EngagementsController < ApplicationController
 
   def index
-    @musicians = Musician.all
+    @engagements = Engagement.all
   end
 
   def show
   end
 
   def new
-    @musician = Musician.new
+    @engagement = Engagement.new
   end
 
   def edit
   end
 
   def create
-    @musician = Musician.new(musician_params)
+    @engagement = Engagement.new(engagement_params)
     # Add save and redirect
   end
 
@@ -24,14 +24,14 @@ class MusiciansController < ApplicationController
   end
 
   def destroy
-    @musician.destroy
+    @engagement.destroy
     # Add destroy and redirect
   end
 
   protected
 
-  def musician_params
-    params[:musician]
+  def engagement_params
+    params[:engagement]
     # Add white list params
   end
 end
