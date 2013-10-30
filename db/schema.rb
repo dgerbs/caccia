@@ -20,28 +20,28 @@ ActiveRecord::Schema.define(version: 20131025171817) do
     t.integer  "musician_id"
     t.integer  "user_id"
     t.integer  "event_id"
-    t.boolean  "status"
-    t.boolean  "application"
-    t.string   "bid"
+    t.boolean  "status",      null: false
+    t.boolean  "application", null: false
+    t.string   "bid",         null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "events", force: true do |t|
     t.integer  "user_id"
-    t.string   "title"
-    t.string   "location"
-    t.string   "summary"
+    t.string   "title",      null: false
+    t.string   "location",   null: false
+    t.string   "summary",    null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "musicians", force: true do |t|
     t.integer  "user_id"
-    t.string   "name"
-    t.string   "email"
-    t.string   "genre"
-    t.string   "location"
+    t.string   "name",       null: false
+    t.string   "email",      null: false
+    t.string   "genre",      null: false
+    t.string   "location",   null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
