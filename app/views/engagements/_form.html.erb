@@ -1,0 +1,10 @@
+<%= simple_form_for(@engagement) do |f| %>
+
+<%= f.input :status %>
+<%= f.input :application %>
+<%= f.input :bid, placeholder: "Enter your bid" %>
+
+<div class="form-actions">
+  <%= f.button :submit %>
+</div>
+<% end %>
