@@ -31,7 +31,6 @@ class EngagementsController < ApplicationController
   protected
 
   def engagement_params
-    params[:engagement]
-    # Add white list params
+    params.require[:engagement].permit[:status, :application, :bid]
   end
 end

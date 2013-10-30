@@ -31,7 +31,6 @@ class EventsController < ApplicationController
   protected
 
   def event_params
-    params[:event]
-    # Add white list params
+    params.require[:event].permit[:title, :location, :summary]
   end
 end

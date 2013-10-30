@@ -31,7 +31,6 @@ class MusiciansController < ApplicationController
   protected
 
   def musician_params
-    params[:musician]
-    # Add white list params
+    params.require[:musician].permit[:name, :email, :genre, :location]
   end
 end
