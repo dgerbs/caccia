@@ -5,4 +5,9 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   validates_presence_of :board
+
+  has_one :board # requires board resource
+  
+  has_many :events
+  has_many :engagements, through: :events
 end
