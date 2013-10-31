@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
 
   validates_presence_of :board
 
-  has_one :board # requires board resource
+  has_many :boards # requires board resource
   
   has_many :events
   has_many :engagements, through: :events
