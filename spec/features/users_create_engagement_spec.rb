@@ -1,4 +1,4 @@
-require 'spec/helpers'
+require 'rails_helper'
 
 feature 'a user or musician creates a new engagement', %Q{
   As a user or musician

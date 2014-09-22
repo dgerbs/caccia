@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 feature 'Musician signs up', %Q{
 	As a rock-star musician
